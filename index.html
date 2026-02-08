@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h2>Registration Form</h2>
+        <input type="text"  id="name"placeholder="YOUR NAME">
+        <input type="email"  id="email"placeholder="EMAIL ID">
+        <input type="number"  id="number"placeholder="PHONE NUMBER">
+        <button onclick="gonext()">submit</button>
+    </div>
+    <script>
+        function gonext()
+{
+   var name=document.getElementById("name").value;
+    var email=document.getElementById("email").value;
+     var number=document.getElementById("number").value;
+     if(name===""||email===""||number===""){
+        alert("please fill all files")
+     }
+     else{
+        window.location.href="page.html"
+     }
+
+}
+    </script>
+</body>
+</html>
